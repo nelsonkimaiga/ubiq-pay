@@ -1,0 +1,471 @@
+@import url('normalize.css');
+
+@font-face {
+    font-family: BIGJOHN;
+    src: url(../font/BIGJOHN.otf);
+}
+@font-face {
+    font-family: Metropolis;
+    src: url(../font/Metropolis.otf);
+}
+@font-face {
+    font-family: SlimJoe;
+    src: url(../font/SlimJoe.otf);
+}
+@font-face {
+    font-family: Anders;
+    src: url(../font/Anders.ttf);
+}
+
+@font-face {
+    font-family: Raleway-Regular;
+    src: url(../font/raleway/Raleway-Regular.otf);
+}
+
+@font-face {
+    font-family: Ribbon;
+    src: url(../font/Ribbon.otf);
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------------*/
+
+html, body {
+    height: 100%;
+    min-height: 800px;
+    width: 100%;
+/*    background: url(../img/bg.svg) #000 no-repeat center center fixed;*/
+    -webkit-background-size: cover;
+    color: #555;
+    background-size: cover;
+    font-family: Raleway-Regular;
+
+    overflow-y:scroll;
+
+}
+
+
+.cover {
+    background: url(../img/pattern_stripe.png) #000;
+    height: 100vh;
+    min-height: 800px;
+}
+
+#all {
+    height: 100vh;
+/*    min-width: 1450px;*/
+    min-height: 800px;
+    position: relative;
+}
+/*----------------------------*/
+
+.ps-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    min-height: 800px;
+    top: 0;
+}
+
+.ps-container > div {
+	position: absolute;
+	width: 50%;
+}
+
+.ps-container > div > div,
+.ps-slidewrapper > nav,
+.ps-slides > div {
+	position: absolute;
+}
+
+/*Colors*/
+.chencha {
+    color: teal !important;
+}
+.wanjugu {color: #F0414C !important;}
+.kirwa{color: #e2e43a !important;}
+.ben { color: #E87A4A !important;}
+
+
+/*--------------Menu------------------*/
+/*Team*/
+
+
+/*--------------Header------------------*/
+.ps-header {
+/*	top: 0px;*/
+	left: 0px;
+    width: 100% !important;
+	height: 100px;
+	z-index: 999;
+    font-family: Raleway-Regular;
+
+}
+
+.ps-header h1 {
+    text-transform: uppercase;
+	color: #ccc;
+	line-height: 100px;
+	margin: 0;
+	padding: 0 50px;
+	font-weight: 200;
+	font-size: 14px;
+	letter-spacing: 10px;
+    z-index: 999;
+}
+
+.ps-contentwrapper {
+	top: 100px;
+	bottom: 0px;
+/*	overflow: hidden;*/
+	z-index: 500;
+}
+
+.ps-content {
+	background: url(../img/pattern_stripe.png) #000;
+	width: 100%;
+	height: auto;
+	padding: 50px;
+    color:darkgrey;
+}
+
+.ps-content h2 {
+	padding: 10px 15px;
+	border-right: 1px solid #f2f2f2;
+	border-bottom: 1px solid #f2f2f2;
+	letter-spacing: 4px;
+	margin: 30px 0 30px;
+	text-align: right;
+    text-transform: uppercase;
+	font-weight: 700;
+    font-size: 2rem;
+    color: aliceblue
+}
+
+.ps-descr {
+    height: 350px;
+    margin-top: 100px;
+    padding: 10px;
+    border-left: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
+}
+
+.ps-content {
+/*    z-index: 499 !important;*/
+}
+.ps-content p {
+	line-height: 26px;
+	font-size: 12px;
+	letter-spacing: 2px;
+	word-spacing: 10px;
+	padding: 10px 15px;
+	font-weight: 400;
+	text-align: justify;
+}
+
+.ps-content a:last-child {
+	font-size: 14px;
+	font-weight: 700;
+	color: #555;
+	letter-spacing: 4px;
+	float: right;
+	border: 3px solid #555;
+	padding: 3px;
+	text-indent: 4px;
+}
+
+.ps-price {
+	float: left;
+	margin: 20px 10px 10px 10px;
+    padding: 10px;
+	width: 140px;
+	height: 140px;
+	line-height: 140px;
+	text-align: center;
+	color: #fff;
+	font-size: 55px;
+	font-weight: 200;
+    font-family: Metropolis;
+}
+
+.p-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+    font-size: .9rem;
+    margin: 0 0 10px 5px;
+}
+
+.p-descr {
+    font-family: Raleway-Regular;
+    font-size: 1rem;
+    letter-spacing: -.2px;
+    word-spacing: .2rem;
+    margin: 20px 0 0 0;
+    height: 100%;
+    color: #C4C4C4;
+}
+
+
+.used-text{
+    font-family: Metropolis;
+    padding: 0px 5px 0 0;}
+
+.no-touch .ps-content a:last-child:hover {
+	color: #b2d79d;
+	border-color: #b2d79d;
+}
+
+.ps-content a:last-child:before {
+	content: "\e030";
+	font-family: 'socicon';
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+	padding-right: 5px;
+}
+
+
+.ps-slidewrapper {
+	right: 0px;
+	top: 0px;
+	height: 100%;
+/*	overflow: hidden;*/
+}
+
+.no-touch .ps-slidewrapper > nav > a {
+	-webkit-transition: box-shadow 0.4s ease-in-out;
+	-moz-transition: box-shadow 0.4s ease-in-out;
+	-ms-transition: box-shadow 0.4s ease-in-out;
+	-o-transition: box-shadow 0.4s ease-in-out;
+	transition: box-shadow 0.4s ease-in-out;
+}
+
+.no-touch .ps-slidewrapper > nav > a:hover {
+	box-shadow: inset 0 0 0 9999px rgba(246,224,121,0.1);
+}
+
+.no-touch .ps-slidewrapper > nav > a:first-child:hover {
+	box-shadow: inset 0 0 0 9999px rgba(249,15,15,0.1);
+}
+
+.ps-slidewrapper > nav > a:after {
+	content: '';
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 50%;
+	left: 50%;
+	margin: -20px 0 0 -50px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-left: 1px solid #fff;
+	border-top: 1px solid #fff;
+}
+
+.ps-slidewrapper > nav > a:first-child:after {
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	-ms-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+	margin: -80px 0 0 -50px;
+}
+
+.ps-slides > div,
+.ps-slidewrapper > nav > a {
+/*	background-color: #fff;*/
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+}
+
+.ps-slides {
+	top: 100px;
+    height: auto;
+    min-height: 500px;
+	bottom: 150px;
+	width: 100%;
+}
+
+.ps-slides > div {
+	width: 100%;
+	height: 100%;
+    min-height: 500px;
+/*    border: 1px solid #fff;*/
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.ps-slidewrapper > nav {
+	width: 100%;
+	height: 150px;
+	bottom: 0px;
+	right: 0px;
+	z-index: 500;
+}
+
+.ps-slidewrapper > nav > a {
+	width: 50%;
+	height: 100%;
+	position: relative;
+	float: left;
+}
+
+.ps-slidewrapper > nav > a:first-child {
+
+}
+
+.ps-move {
+	-webkit-transition: top 400ms ease-out;
+	-moz-transition: top 400ms ease-out;
+	-o-transition: top 400ms ease-out;
+	-ms-transition: top 400ms ease-out;
+	transition: top 400ms ease-out;
+}
+
+
+/*Photos*/
+
+#chencha-photo {
+/*    background-image:url(images/andela.jpg);*/
+    background-color: rgba(2, 132, 130, 0.5)
+
+}
+
+#wanjugu-photo {
+    background-image:url(images/iwanjugu.png);
+    background-color:rgba(255,0,0,0.3)}
+#kirwa-photo {
+    background-image:url(images/kirwa.png);
+    background-color:rgba(255,255,0,0.3);
+
+}
+#ben-photo {
+    background-image:url(images/ben.JPG);
+    background-color:rgba(232, 122, 74, 0.3);
+
+}
+
+.team-photo {
+    z-index: 1;
+    top: -100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------------*/
+@media screen and (max-width: 860px) {
+    #all {
+        width: 80%;
+    }
+
+    .js .bt-menu.bt-menu-open {
+	height: 100%;
+	border-width: 30px 70px 30px 70px;
+    }
+	.js .ps-container > div {
+		width: 100%;
+	}
+
+	.js .ps-header {
+		height: 80px;
+	}
+
+	.js .ps-header h1 {
+        height: 80px;
+		line-height: 50px;
+		padding: 0px 20px;
+		letter-spacing: 4px;
+	}
+
+	.js .ps-slides {
+        height: auto;
+		bottom: 320px;
+		top: 80px;
+	}
+
+    .js .ps-slides > div {
+        height: auto;
+        min-height: 300px;
+        border: 0px solid #fff;
+
+    }
+
+	.js .ps-slidewrapper > nav {
+		height: 100px;
+        background: url(../img/pattern_stripe.png) #000;
+
+	}
+
+	.js .ps-contentwrapper {
+		top: auto;
+		height: 300px;
+        bottom: 100px;
+	}
+
+	.js .ps-content {
+		padding: 10px;
+        height: 250px;
+	}
+
+	.js .ps-content h2 {
+		border-right: none;
+		font-size: 18px;
+		margin: 10px 0;
+		padding-top: 0;
+	}
+
+	.js .ps-content span.ps-price {
+		font-size: 3rem;
+		width: 100px;
+		height: 100px;
+		line-height: 50px;
+		font-weight: 700;
+        padding: 20px 0 0 0;
+	}
+
+	.js .ps-content p {
+		line-height: 20px;
+		border: none;
+		padding: 5px 10px;
+		height: 100%;
+	}
+
+    .js .ps-descr {
+        margin-top: 20px;
+        height: 150px;
+    }
+    .js .p-descr {
+        margin: 10px 0 0 0;
+    }
+
+
+	.js .p-descr a:last-child {
+		font-size: 12px;
+		margin: -10px 0 0 0;
+	}
+}
+
+
+
+

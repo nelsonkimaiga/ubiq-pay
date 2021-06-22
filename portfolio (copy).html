@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang=en>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Moringa DevShop</title>
+<link rel="icon" href="img/logo-dark.png">
+<link href="css/normalize.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/materialize.css">
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/behaviour.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+        <script src="js/modernizr.custom.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/mcust.js"></script>
+        <script src="js/toucheffects.js"></script>
+        <link rel="stylesheet" href="css/hover.css">
+        <script src="js/wow.js"></script>
+        <link rel="stylesheet" href="css/animate.css">
+</head>
+<script>
+
+    jQuery(document).ready(function ($) {
+    $(window).load(function () {
+        setTimeout(function(){
+            $('.se-pre').fadeOut('slow', function () {
+            });
+        },3000);
+
+    });
+});
+    </script>
+    <div class="se-pre"></div>
+<body>
+<header class="codrops-header">
+<div class="cover">
+<video autoplay loop id="vid">
+    <source src="img/bg2.mp4" type="video/mp4">
+ 
+</video>
+
+
+
+    <div class="x_bg col s12 m12 l12 ">
+
+    <div class="container">
+    <div class="row">
+<!--
+    <div class="header-bar col s12 m12 l12" style="  padding-left: 100%;">
+<img src="img/logo-white.png" style="padding-top:20px;">
+    </div>
+-->
+        <div class="cntr strapline col s12 m12 l12 ">
+            <div class="col s12 m12 l12"><img src="img/logo-white.png"  style="padding-top:55px;"> </div>
+<div class="project_title col s12 m12 l12">
+<span class="page-title col s12 m12 l12" style="font-size:30px; margin-bottom:10px;">Our projects</span>
+<br>
+<span class="intro-text shade4 col s12 m12 l12">At Moringa DevShop, we value excellence and timeliness in our work. Here, you can check out what we've built for world-class clients.</span>
+
+</div>
+
+<ul class="grid cs-style-7">
+           
+				<li class="wow slideInLeft" data-wow-duration="10s">
+					<figure>
+						<img src="img/ihub_screen.png" alt="" height="300" width="400">
+						<figcaption>
+							<h3 class="header3">Ihub</h3>
+							<span>Moringa Devshop</span>
+							<a href="">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+			
+			<li class="wow bounceInRight pulse" data-wow-duration="10s">
+					<figure>
+						<img src="img/insideout.png" alt="" height="300" width="400">
+						<figcaption>
+							<h3 class="header3">Iside out</h3>
+							<span>Moringa Devshop</span>
+							<a href="">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+				<li>
+					<figure>
+						<img src="img/ratiba.jpg" alt="" height="300" width="400">
+						<figcaption>
+							<h3 class="header3">Ratibar</h3>
+							<span>Moringa Devshop</span>
+							<a href="http://dribbble.com/shots/1118904-Game-Center">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+					<li>
+					<figure>
+						<img src="img/qfilemanager.png" alt="" height="300" width="400">
+						<figcaption>
+							<h3 class="header3">File Manager</h3>
+							<span>Moringa Devshop</span>
+							<a href="">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+					<li>
+					<figure>
+						<img src="img/hirezippy_screen.png" alt="" height="300" width="400">
+						<figcaption>
+							<h3 class="header3">Hire Zippy</h3>
+							<span>Moringa Devshop</span>
+							<a href="">Take a look</a>
+						</figcaption>
+					</figure>
+				</li>
+				
+				
+			</ul>
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+        </div>
+        </div>
+    </div>
+
+<!--
+<div  class="copyright col s12 m12 l12">
+<div class="container">
+<div class="row">
+<div class="col s12 m12 l12">
+&copy Moringa
+</div>  
+</div>
+
+</div>
+        </div>
+-->
+</div>
+</header>
+            <nav id="bt-menu" class="bt-menu">
+                <a href="#" class="bt-menu-trigger"><span>Menu</span></a>
+                <ul>
+                    <li onclick="gohome()"><a href="#"><img src="img/house34(1).png"></a></li>
+                    <li onclick="goportofolio()"><a href="#" ><img src="img/briefcase69(2).png"></a></li>
+                    <li onclick="gocontact()"><a href="#" > <img src="img/phone(2)"></a></li>
+
+                </ul>
+            </nav>
+    
+    </body>
+     <script>
+    document.getElementById('vid').play();
+</script>
+    <script src="js/classie.js"></script>
+    <script src="js/borderMenu.js"></script>
+    <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+</body>
+</html>
